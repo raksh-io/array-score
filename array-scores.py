@@ -10,13 +10,7 @@ def calculate_average(scores):
         return 0
     return sum(scores) / len(scores)
 
-def find_max(scores):
-    """find maximum score."""
-    return max(scores)
 
-def find_min(scores):
-    """find minimum score."""
-    return min(scores)
 
 if __name__ == "__main__":
     print("=== Array Scores Processor (main branch) ===")
@@ -40,13 +34,11 @@ if __name__ == "__main__":
 
         total = calculate_sum(scores)
         avg = calculate_average(scores)
-        maximum = find_max(scores)
-        minimum = find_min(scores)
+
 
         print(f"\nSum of scores = {total}")
         print(f"Average of scores = {avg:.2f}")
-        print(f"Maximum score = {maximum}")
-        print(f"Minimum score = {minimum}")
+
 
     except ValueError:
         print("Invalid input! Please enter integer values only.")
